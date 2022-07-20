@@ -1,0 +1,125 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+ /* ----------top banner start------------ */
+.banner-headline{
+    color: white;
+    font-size: 40px;
+  margin-top: 30px;
+}
+.banner-2nd-part{
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+.banner-first-part{
+    margin-left: 100px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+.top-banner{
+     display: flex;
+     background-color: #161616;
+     border-radius: 20px;
+     gap: 30px;
+}
+.button-part a{
+    text-decoration: none;
+    color: white;
+}
+.button-part{
+    font-size: medium;
+    width: 120px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: #DD0000;
+}
+.fa-arrow-right:before {
+    content: "\f061";
+    margin-left:15px;
+}
+.bd-cricket{
+   width: 100%;
+  margin-top: 70px;
+  padding-top: 70px; 
+}
+.bd-cricket img{
+    width: 100%;
+}
+ /* ----------top banner end--------- */
+ .container-box-1 a{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    text-align: center;
+ }
+ .container-box-1{
+    
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    background-color: #161616;
+    margin-left: 50px;
+   padding: 30px;
+   gap: 20px; 
+   border-radius: 7px;  
+ }
+ .container-box-2{
+        display: grid;
+       grid-template-columns: repeat(3,1fr);
+    
+ }
+ .single-player{
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 15px;
+ }
+ .container{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+       
+ }
+
+  /* -----------------footer section start----------- */
+  .footer-section{
+    padding-top: 70px;
+   
+  } 
+    .footer-headline h1{
+        text-align: center;
+        color: white;
+        margin-top: 50px;
+        padding-top: 90px;   
+    }
+    hr{
+        width: 70%;
+        color: #655f5f;
+    }
+    .footer-headline{
+        background-color: #161616;
+        
+    }
+    .footer-info{
+        font-size: 17px;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        color: #B9B9B9;
+       
+    }
+    .footer-icon{
+        display: flex;
+        gap: 60px;
+        color: rgb(78, 78, 245);
+       justify-content: center;
+       padding-bottom: 90px;
+    }
+
+
+ 
