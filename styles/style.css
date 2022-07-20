@@ -19,7 +19,8 @@ body{
     padding-bottom: 80px;
 }
    .top-banner{
-     display: flex;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
      background-color: #161616;
      border-radius: 20px;
      gap: 30px;
@@ -48,6 +49,11 @@ body{
    .bd-cricket img{
     width: 100%;
 }
+   /* -----top banner hover----- */
+   .top-banner:hover{
+    background-color: hsl(39, 55%, 55%);
+    transform: scale(0.70);
+   }
  /* -------------------top banner end----------------- */
   /*--------------------- 
             container section start---------------- */
@@ -107,7 +113,7 @@ body{
     content: "\f3e8";
     margin-right: 7px;
 }
-
+  /* ---anchor hover--- */
    .anchor-change:hover{
      
      background-color: orange;
@@ -117,6 +123,19 @@ body{
 }
 
    .top-banner img{
+    
+}
+.view-button a{
+    
+    text-decoration: none;
+    margin-top: 60px;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+   background-color: red;
+}
+.view-button{
+    display: none;
     
 }   
 
@@ -168,11 +187,110 @@ body{
      /*----- ---------
     mobile devices
     ----------------- */
- @media only screen and (max-width:688){
+    @media only screen and (max-width:600px){
+    .container{
+        margin: 30px ;
+        display: grid;
+        grid-template-columns:  1fr;
+           
+     }
+     .container-box-2{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 10px;
         
+     }
+     .top-banner{
+        
+        grid-template-columns: 1fr;
        
+       
+        gap: 20px;
+   }
+   .banner-first-part{
+    margin-left: 0;
+    margin-bottom: 10px;
+    padding: 10px;
+    
+}
+.footer-headline h1{
+    text-align: center;
+       
+}
+.footer-info{
+    font-size: 17px;
+   display: grid;
+    
+    justify-content: center;
+    gap: 10px;
+    color: #B9B9B9;
+   
+}
  }
+ /* --------mobile devices end------------ */
+  /*------------- 
+      Tablet Devices--------- */
 
-
+      @media only screen and (min-width:601px)and (max-width:768px){
+       
+        .top-banner{
+            
+            grid-template-columns: 1fr;
+            gap: 20px;
+       }
+       .banner-first-part{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+       
+        margin-bottom: 10px;
+        padding: 10px;
+        
+    }
+    .container-box-1{
+    
+        display: inline-flex;
+        flex-direction: row;
+        
+        gap: 10px; 
+        border-radius: 12px;  
+     }
+     .container-box-1 > a{
+        width: 200px;
+     }
+ 
+     .container-box-2{
+        display: grid;
+        grid-template-columns:50% repeat(1, 1fr);
+        gap: 20px;
+        padding: 20px;
+        
+     }
+     .container{
+        margin: 30px ;
+        display: grid;
+        grid-template-columns:1fr;
+           
+     }
+     .footer-headline h1{
+        text-align: center;
+           
+    }
+    .footer-info{
+        font-size: 17px;
+       display: grid;
+        padding: 40px 40px;
+        justify-content: center;
+        gap: 10px;
+        color: #B9B9B9;
+       
+    }
+    .view-button{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }   
+      }
 
  
